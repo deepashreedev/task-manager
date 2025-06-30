@@ -208,10 +208,10 @@ const Home = ({ tasks, deleteTask }) => {
                 paginatedTasks.map((task) => (
                   <tr key={task.id} className="hover:bg-gray-50">
                     <td className="px-6 py-4 whitespace-nowrap">
-                      <div className="text-sm font-medium text-pink-500">{task.title}</div>
+                      <div className="text-sm font-medium text-purple-600">{task.title}</div>
                     </td>
                     <td className="px-6 py-4">
-                      <div className="text-sm text-pink-500 max-w-xs truncate">{task.description}</div>
+                      <div className="text-sm text-purple-600 font-medium max-w-xs truncate">{task.description}</div>
                     </td>
                     <td className="px-6 py-4 whitespace-nowrap">
                       <span className={`inline-flex px-2 py-1 text-xs font-semibold rounded-full ${getStatusColor(task.status)}`}>
@@ -223,7 +223,7 @@ const Home = ({ tasks, deleteTask }) => {
                         {task.priority}
                       </span>
                     </td>
-                    <td className="px-6 py-4 whitespace-nowrap text-sm text-pink-500">
+                    <td className="px-6 py-4 whitespace-nowrap font-medium text-sm text-purple-600">
                       {new Date(task.createdAt || task.id).toLocaleDateString()}
                     </td>
                     <td className="px-6 py-4 whitespace-nowrap text-sm font-medium">

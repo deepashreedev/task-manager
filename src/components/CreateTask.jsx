@@ -95,9 +95,7 @@ const CreateTask = ({ addTask }) => {
         </button>
         <div>
           <h1 className="text-3xl font-bold  text-orange-900">Create New Task</h1>
-          <p className="mt-2  text-orange-800">
-            Add a new task to your management system
-          </p>
+       
         </div>
       </div>
 
@@ -110,7 +108,7 @@ const CreateTask = ({ addTask }) => {
               htmlFor="title"
               className="block text-sm font-medium text-orange-700 mb-2"
             >
-              Task Title *
+              Task Title
             </label>
             <input
               type="text"
@@ -134,7 +132,7 @@ const CreateTask = ({ addTask }) => {
               htmlFor="description"
               className="block text-sm font-medium text-orange-700 mb-2"
             >
-              Description *
+              Description 
             </label>
             <textarea
               id="description"
@@ -160,7 +158,7 @@ const CreateTask = ({ addTask }) => {
                 htmlFor="status"
                 className="block text-sm font-medium text-orange-700 mb-2"
               >
-                Status *
+                Status 
               </label>
               <select
                 id="status"
@@ -187,7 +185,7 @@ const CreateTask = ({ addTask }) => {
                 htmlFor="priority"
                 className="block text-sm font-medium text-orange-700 mb-2"
               >
-                Priority *
+                Priority 
               </label>
               <select
                 id="priority"
